@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(218, 218, 218);
+  height: 1000px;
+}
+
+.first {
+  position: relative;
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+#header-img {
+  width: 75px;
+  height: 75px;
+}
+
+#nav-bar {
+  width: 40%;
+  /* background-color: brown; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+/* end of navbar */
+
+/* first */
+#two {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#form {
+  flex-direction: column;
+}
+
+input {
+  height: 30px;
+}
+
+#submit {
+  border: 0;
+  background-color: blueviolet;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}
+/* end of two */
+
+/* content */
+#content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.harga {
+  width: 20%;
+  border: 1px solid black;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.harga p a {
+  font-weight: bold;
+}
+
+.paket {
+  background-color: gray;
+  margin-top: -20px;
+}
+
+/* video */
+
+#promo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* responsive */
+@media (max-width: 749px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  #nav-bar {
+    /* background-color: chartreuse; */
+    width: 100%;
+    margin-top: -45px;
+  }
+
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    /* background-color: cadetblue; */
+  }
+
+  #two {
+    margin-top: 150px;
+  }
+
+  #content {
+    flex-direction: column;
+  }
+
+  .harga {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
